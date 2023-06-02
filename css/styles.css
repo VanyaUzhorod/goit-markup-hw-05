@@ -162,6 +162,9 @@ padding-top: 24px;
 padding-bottom: 24px;
 position: relative;
 }
+.menu-link.current{
+    color: #404bbf;
+}
 .menu-link:after{
     content: "";
     position: absolute;
