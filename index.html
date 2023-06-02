@@ -19,7 +19,7 @@
         <a class="logo-link link" href="./index.html">Web<span class="span-header">Studio</span></a>
         <!-- Навігація -->
             <ul class="site-nav list">
-                <li class="items"><a class="menu-link link" href="./index.html">Studio</a></li>
+                <li class="items"><a class="menu-link link current" href="./index.html">Studio</a></li>
                 <li class="items"><a class="menu-link link" href="./portfolio.html">Portfolio</a></li>
                 <li class="items"><a class="menu-link link" href="">Contacts</a></li>
             </ul>
@@ -38,7 +38,16 @@
                <div class="container">
                 <h1 class="title">Effective Solutions
                     for Your Business</h1>
-                    <button class="btn" type="button">Order Service</button>
+                    <button data-modal-open class="btn" type="button">Order Service</button>
+                    <div class="backdrop is-hidden" data-modal>
+                        <div class="modal">
+                            <button data-modal-close class="close">
+                                <svg class="modal-close-icon" width="8" height="8">
+                                    <use href="./images/icons.svg#icon-close-black"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
                </div>
             </section>
             <section class="work-section">
@@ -392,5 +401,6 @@ problem to walk away with the perfect and creative solution. </p>
         </div>
            </div>
         </footer>
+        <script src="./js/modal.js"></script>
 </body>
 </html>
